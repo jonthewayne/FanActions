@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* GENERAL */
+body	{ color:#546671;}
+a	{color:#0088CC;}
+
+/* HEADER */
+#header_wrapper	{background-image:url(gfx/header_bg.png); background-color:#0a2540;}
+#header	{ background-image:url(gfx/header_inner_bg.png);}
+
+/* NAVIGATION */
+#nav_wrapper	{background-color:#0473b2;}
+#nav_wrapper ul.menu	{ background-image:url(gfx/nav_inner_bg.png); }
+#nav_wrapper ul.menu li a	{ color:#f0fcff;}
+
+/* INTRO */
+#intro_wrapper	{background-image:url(gfx/intro_bg.png); background-color:#0473b2;}
+.intro_home	{background-image:url(gfx/intro_inner_bg.png);}
+.intro_page	{background-image:url(gfx/intro_inner_bg.png);}
+.intro_fullwidth	{background-image:url(gfx/intro_inner_bg.png);}
+.intro_text	{color:#b9ecf0;}
+.intro_desc	{color:#b9ecf0;}
+.slider_subheading	{color:#b9ecf0;}
+
+/* CALL TO ACTION - HOME PAGE */
+.action_button	{ background-image:url(gfx/action_button_left.png);}
+.action_button span	{ background-image:url(gfx/action_button_right.png);}
+
+/* HOME PAGE WIDGETS */
+#content .home_layout_1 li a:hover	{color:#0088CC;}
+
+/* HOME PAGE WIDGETS - RECENT COMMENTS */
+#content .home_layout_1 ul#recentcomments li a	{ color:#0088CC;}
+
+/* SIDEBAR */
+#sidebar li a	{background-image:url(gfx/sidebar_arrow.png);}
+#sidebar li a:hover	{background-image:url(gfx/sidebar_arrow.png); color:#0088CC;}
+
+/* SIDEBAR WIDGETS - RECENT COMMENTS */
+#sidebar ul#recentcomments li a	{ color:#0088CC;}
+
+/* SIDEBAR WIDGETS - TWITTER PLUGIN */
+#sidebar ul.tweets li a	{ color:#0088CC;}
+
+/* PAGE */
+.page_meta_box	{color:#bde4e7; border:1px solid rgba(0,255,255,0.3);}
+
+/* BTN_A - WHITE BUTTON IN BODY CONTENT */
+.btn_a:hover, .comment-reply-link:hover, #commentform input#submit:hover, #content input#submit_contactform:hover, #searchform input#searchsubmit:hover, .wp-pagenavi a:hover	{ -webkit-box-shadow: 0 0px 7px #acebff; -moz-box-shadow: 0 0px 7px #acebff;}
+
+/* INPUTS, TEXTAREAS AND LABELS */
+#content input:focus, #content textarea:focus	{ -moz-box-shadow: 0 0px 10px #acebff; -webkit-box-shadow: 0 0px 10px #acebff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

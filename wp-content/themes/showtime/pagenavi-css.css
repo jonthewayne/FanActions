@@ -1,0 +1,93 @@
+/*
+Default style for WP-PageNavi plugin
+
+http://wordpress.org/extend/plugins/wp-pagenavi/
+*/
+.page_template_portfolio .wp-pagenavi	{ width:580px;}
+.page_template_portfolio_fullwidth .wp-pagenavi	{ width:880px;}
+
+.wp-pagenavi {
+	font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+	text-transform: uppercase;
+	clear: both;
+	padding-top: 46px;
+	font-size:11px;
+}
+.wp-pagenavi a, 
+.wp-pagenavi .current {
+	
+	/* GENERAL */
+	padding: 6px 10px 6px 10px;
+	margin-right: 3px;
+	text-decoration: none !important;
+	text-align: center;
+	cursor:pointer;
+	text-transform:uppercase;
+	
+	/* BACKGROUND GRADIENTS */
+	background: #F6F6F6;
+	background: -moz-linear-gradient(top, #FFF, #FFF 50%, #EFEFEF);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFF), color-stop(.5, #FFF), to(#EFEFEF));
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFFFFF', EndColorStr='#E6E6E6'); /* IE6,IE7 only */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFFFFF', EndColorStr='#E6E6E6')"; /* IE8 only */
+	
+	/* BORDERS */
+	border:1px solid #CCC;
+	border-bottom:1px solid #BFBFBF;
+	
+	/* TEXT COLOR & SHADOW */
+	color:#666;
+	text-shadow: 0 1px 1px #FFF;
+	
+	/* BORDER RADIUS */
+	 -moz-border-radius: 4px;
+	 -webkit-border-radius: 4px;
+	 border-radius: 4px;
+
+}
+.wp-pagenavi a:hover {
+	
+	/* BACKGROUND GRADIENTS */
+	background: #EEE;
+	background: -moz-linear-gradient(top, #FFF, #FFF 70%, #EEE);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFF), color-stop(.7, #FFF), to(#EEE));
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFFFFF', EndColorStr='#EEEEEE'); /* IE6,IE7 only */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFFFFF', EndColorStr='#EEEEEE')"; /* IE8 only */
+}
+
+.wp-pagenavi a:focus, 
+.wp-pagenavi .current	{
+	
+	/* GENERAL */
+	padding:7px 11px 7px 11px;
+	font-weight:bold;
+	
+	/* TEXT COLOR & SHADOW */
+	color:#FFF;
+	text-shadow: 0 -1px 1px #333;
+	
+	/* BORDERS */
+	border:none;
+		
+	/* BACKGROUND GRADIENTS */
+	background:#999;
+	background: -moz-linear-gradient(top, #999, #777 5%, #AFAFAF);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #777), color-stop(.05, #555), to(#999)); 
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#777777', EndColorStr='#AFAFAF'); /* IE6,IE7 only */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#777777', EndColorStr='#AFAFAF')"; /* IE8 only */
+	
+	/* INNER SHADOW & OUTER SHADOW */
+	box-shadow: inset 0px 2px 5px #444, 0 1px 0px #DDD;
+	-webkit-box-shadow: /*inset 0px 2px 5px #444,*/ 0 1px 0px #DDD;
+	-moz-box-shadow: inset 0px 2px 7px #444, 0 1px 0px #DDD;
+	
+}
+
+.wp-pagenavi .pages {
+	float: right;
+	font-weight:normal;
+	text-transform:none;
+	color:#666;
+}
+.wp-pagenavi .first	{margin:0;}
+.wp-pagenavi .extend	{ margin:0 8px 0 6px;}

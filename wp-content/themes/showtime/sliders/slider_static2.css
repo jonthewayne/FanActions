@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+
+.slider_static2	{ width:960px; height:353px; overflow:hidden; padding-top:35px; position:/*IE7*/relative; z-index:/*IE7*/99;}
+.slider_static2 h2	{ font-size:42px; padding:27px 0 8px 0;}
+.static2_desc	{ float:left; width:370px; color:#FFF; font-size:14px; padding-top:5px;}
+.static2_desc p	{ padding:0 0 16px 0;}
+.static2_image	{ float:right; display:block;}

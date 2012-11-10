@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* GENERAL */
+body	{ color:#655d6a;}
+a	{color:#9a00cc;}
+
+/* HEADER */
+#header_wrapper	{background-image:url(gfx/header_bg.png); background-color:#43195d;}
+#header	{ background-image:url(gfx/header_inner_bg.png);}
+
+/* NAVIGATION */
+#nav_wrapper	{background-color:#a335b4;}
+#nav_wrapper ul.menu	{ background-image:url(gfx/nav_inner_bg.png); }
+#nav_wrapper ul.menu li a	{ color:#fffcff;}
+
+/* INTRO */
+#intro_wrapper	{background-image:url(gfx/intro_bg.png); background-color:#a335b4;}
+.intro_home	{background-image:url(gfx/intro_inner_bg.png);}
+.intro_page	{background-image:url(gfx/intro_inner_bg.png);}
+.intro_fullwidth	{background-image:url(gfx/intro_inner_bg.png);}
+.intro_text	{color:#f9d1ff;}
+.intro_desc	{color:#f9d1ff;}
+.slider_subheading	{color:#f9d1ff;}
+
+/* CALL TO ACTION - HOME PAGE */
+.action_button	{ background-image:url(gfx/action_button_left.png);}
+.action_button span	{ background-image:url(gfx/action_button_right.png);}
+
+/* HOME PAGE WIDGETS */
+#content .home_layout_1 li a:hover	{color:#9a00cc;}
+
+/* HOME PAGE WIDGETS - RECENT COMMENTS */
+#content .home_layout_1 ul#recentcomments li a	{ color:#9a00cc;}
+
+/* SIDEBAR */
+#sidebar li a	{background-image:url(gfx/sidebar_arrow.png);}
+#sidebar li a:hover	{background-image:url(gfx/sidebar_arrow.png); color:#9a00cc;}
+
+/* SIDEBAR WIDGETS - RECENT COMMENTS */
+#sidebar ul#recentcomments li a	{ color:#9a00cc;}
+
+/* SIDEBAR WIDGETS - TWITTER PLUGIN */
+#sidebar ul.tweets li a	{ color:#9a00cc;}
+
+/* PAGE */
+.page_meta_box	{color:#ffcaf8; border:1px solid rgba(255,200,255,0.3);}
+
+/* BTN_A - WHITE BUTTON IN BODY CONTENT */
+.btn_a:hover, .comment-reply-link:hover, #commentform input#submit:hover, #content input#submit_contactform:hover, #searchform input#searchsubmit:hover, .wp-pagenavi a:hover	{ -webkit-box-shadow: 0 0px 7px #f8baff; -moz-box-shadow: 0 0px 7px #f8baff;}
+
+/* INPUTS, TEXTAREAS AND LABELS */
+#content input:focus, #content textarea:focus	{ -moz-box-shadow: 0 0px 10px #f8baff; -webkit-box-shadow: 0 0px 10px #f8baff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+################################################################################
+## SHOWTIME 3.3 CHANGE LOG - Feb 29, 2012
+################################################################################
+
+MORE INFO:
+----------
+NEW - Deleted the outdated cuf—n and replaced it with the more modern @font-face
+
+FILES CHANGED:
+--------------
+style.css				    // changed a lot of code
+header.php                                  // deleted some includes and added some new ones inside the <head> 
+/js/main.js                                 // Deleted cufon
+/sliders/slider_freshcubes.js		    // Deleted cufon
+/sliders/scripts/slider_freshcubes.js		    // Deleted cufon
+/js/cufon/		                    // Deleted the whole /cufon/ folder
+/js/cufon.config.js		            // Deleted this whole file
+
+
+################################################################################
+## SHOWTIME 3.2 CHANGE LOG - Sep 7, 2011
+################################################################################
+
+MORE INFO:
+----------
+FIX - HTML code in Footer Left doesn't work 
+FIX - Slider Permission bug 
+NEW - FreshTour Deep linking
+FIX - IE cannot hit search button
+
+FILES CHANGED:
+--------------
+style.css				    // changed version to 3.1 and added auto theme options saving
+footer.php                                  // HTML code in Footer Left doesn't work 
+/freshwork/freshslider/freshslider.php      // Slider Permission bug 
+/js/main.js                                 // FreshTour deep linking
+/gfx/search_top_right.png		    // Added
+/gfx/search_top_left.png		    // Added
+style.css				    // Changed line 181
+/freshwork/freshpanel/functions.php	    // Switched code from top to bottom
+
+
+################################################################################
+## SHOWTIME 3.1 CHANGE LOG - Sep 7, 2011
+################################################################################
+
+MORE INFO:
+----------
+FIX - 404 error when listing portfolio categories
+
+FILES CHANGED:
+--------------
+style.css				    // changed version to 3.1 and added auto theme options saving
+functions.php				    // added properly managing custom post types
+category.php			            // added properly managing custom post types

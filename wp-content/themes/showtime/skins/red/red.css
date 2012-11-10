@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* GENERAL */
+body	{ color:#544b4b;}
+a	{color:#cc0000;}
+
+/* HEADER */
+#header_wrapper	{background-image:url(gfx/header_bg.png); background-color:#380000;}
+#header	{ background-image:url(gfx/header_inner_bg.png);}
+
+/* NAVIGATION */
+#nav_wrapper	{background-color:#c8250f;}
+#nav_wrapper ul.menu	{ background-image:url(gfx/nav_inner_bg.png); }
+#nav_wrapper ul.menu li a	{ color:#FFF;}
+
+/* INTRO */
+#intro_wrapper	{background-image:url(gfx/intro_bg.png); background-color:#c8250f;}
+.intro_home	{background-image:url(gfx/intro_inner_bg.png);}
+.intro_page	{background-image:url(gfx/intro_inner_bg.png);}
+.intro_fullwidth	{background-image:url(gfx/intro_inner_bg.png);}
+.intro_text	{color:#ffdb60;}
+.intro_desc	{color:#ffdb60;}
+.slider_subheading	{color:#ffdb60;}
+
+/* CALL TO ACTION - HOME PAGE */
+.action_button	{ background-image:url(gfx/action_button_left.png);}
+.action_button span	{ background-image:url(gfx/action_button_right.png);}
+
+/* HOME PAGE WIDGETS */
+#content .home_layout_1 li a:hover	{color:#cc0000;}
+
+/* HOME PAGE WIDGETS - RECENT COMMENTS */
+#content .home_layout_1 ul#recentcomments li a	{ color:#cc0000;}
+
+/* SIDEBAR */
+#sidebar li a	{background-image:url(gfx/sidebar_arrow.png);}
+#sidebar li a:hover	{background-image:url(gfx/sidebar_arrow.png); color:#cc0000;}
+
+/* SIDEBAR WIDGETS - RECENT COMMENTS */
+#sidebar ul#recentcomments li a	{ color:#cc0000;}
+
+/* SIDEBAR WIDGETS - TWITTER PLUGIN */
+#sidebar ul.tweets li a	{ color:#cc0000;}
+
+/* PAGE */
+.page_meta_box	{color:#ffe699; border:1px solid rgba(255,210,80,0.3);}
+
+/* BTN_A - WHITE BUTTON IN BODY CONTENT */
+.btn_a:hover, .comment-reply-link:hover, #commentform input#submit:hover, #content input#submit_contactform:hover, #searchform input#searchsubmit:hover, .wp-pagenavi a:hover	{ -webkit-box-shadow: 0 0px 7px #ffd8a0; -moz-box-shadow: 0 0px 7px #ffd8a0;}
+
+/* INPUTS, TEXTAREAS AND LABELS */
+#content input:focus, #content textarea:focus	{ -moz-box-shadow: 0 0px 10px #ffd8a0; -webkit-box-shadow: 0 0px 10px #ffd8a0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

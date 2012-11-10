@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*////////////////////////////////////////////////////////////////////////////*/
+/* SLIDER 3D */
+/*////////////////////////////////////////////////////////////////////////////*/
+.slider_fresh {width:960px; height:360px; border: 1px solid black; overflow:hidden;}
+.fresh_cubes {width:960px; height:360px; border: 1px solid black; overflow:hidden; position:relative;background-image:url('gfx/fantasy.jpg'); background-position:0px -500px; }
+.fresh_cube {width:60px; height:60px; position: absolute; background-image:url('gfx/imagefor.jpg');}
+.fresh_object {position:absolute; background-image:url('gfx/imagefor.jpg');}
+               /*
+            background-image:url('smiley.gif');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:center; }
+                                    */
