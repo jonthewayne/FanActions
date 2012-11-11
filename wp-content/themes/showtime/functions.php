@@ -1,4 +1,6 @@
 <?php
+// Include project functions
+include_once(TEMPLATEPATH.'/lib/project_functions.php'); 
 
 add_action('pre_get_posts', 'change_pagination');
 
