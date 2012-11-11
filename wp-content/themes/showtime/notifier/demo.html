@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Notification messages</title>
+
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,cyrillic" rel="stylesheet" type="text/css" />
+	<link href="css/base.css" rel="stylesheet" type="text/css" />
+	<link href="css/jnotifier.css" rel="stylesheet" type="text/css" />
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/jnotifier.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	function generateMessage() {
+		var mHeader = $('#form-message-header').val();
+		var mContent = $('#form-message-text').val();
+		var mImage = undefined;
+		var mOptions = {};
+		
+		// image
+		switch($('#form-message-image option:selected').val()) {
+			case 'image1':
+				mImage = 'image.png';
+			break;
+			case 'image2':
+				mImage = 'image.jpg';
+			break;
+		}
+		
+		// ttl
+		mOptions.lifeTime = $('#form-message-ttl').val();
+		
+		// cb click
+		if ($('#form-message-cb-click').prop('checked')) {
+			mOptions.click = function() {
+				alert('You clicked on message.');
+			}
+		}
+		
+		// cb clock
+		if ($('#form-message-cb-close').prop('checked')) {
+			mOptions.close = function() {
+				alert('You closed message.');
+			}
+		}
+		
+		$.jnotify(mHeader, mContent, mImage, mOptions);
+	}
+	
+	</script>
+</head>
+<body>
+	<div id="notifier-box"></div>
+	<div id="wrap">
+		<div class="form">
+			<h1>Configuration jNotifier message (for demo)</h1>
+			<form action="#" method="post">
+				<div class="field">
+					<label for="form-message-header">Header:</label>
+					<input type="text" name="form-message-header" id="form-message-header" 
+						value="Message from <b>John Doe</b>" />
+				</div>
+				<div class="field">
+					<label for="form-message-text">Content:</label>
+					<textarea name="form-message-text" id="form-message-text" rows="3">Hello <b>Janny</b>, my name is John Doe, i want to meet your on neutral territory for work discussions! What do you think about it?</textarea>
+				</div>
+				<div class="field">
+					<label for="form-message-image">Image:</label>
+					<select name="form-message-image" id="form-message-image">
+						<option value="image0">Without image</option>
+						<option value="image1" selected="selected">Image 1</option>
+						<option value="image2">Image 2</option>
+					</select>
+				</div>
+				<div class="field">
+					<label for="form-message-ttl">Lifetime (in milliseconds, or 0 for unlimited):</label>
+					<input type="text" name="form-message-ttl" id="form-message-ttl" value="5000" />
+				</div>
+				<div class="field">
+					<label>Enable examples callbacks:</label>
+					<input type="checkbox" id="form-message-cb-click" value="1" /> Click
+					<input type="checkbox" id="form-message-cb-close" value="1" /> Close
+				</div>
+				<div class="field-button">
+					<input type="button" value="Show message" onclick="generateMessage(); return false;" />
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

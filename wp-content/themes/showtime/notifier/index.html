@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>jNotifier. How to use it.</title>
+
+	<link href="css/base.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+	body { font-family: Ubuntu, Tahoma, Arial, sans-serif; }
+	h1 { margin-top: 15px; }
+	h1:first-child { margin-top: 0; }
+	.code { background: #efefef; color: #999; padding: 10px; font-family: Cournie New; font-size: 15px; }
+	</style>
+</head>
+<body>
+	<div id="wrap" style="width:500px;color:#444;">
+		<h1>jNotifier. How to use it.</h1>
+		<p>
+		For display message, you must be call a "$.jnotify" function.<br />
+		This function have two required arguments, title, text of message, and have two not required arguments, - preview picture and options.
+		Options have four params: timer for close message, custom class name for custom style, and two callback function, for close and click.<br />
+		</p>
+		
+		<h1>$.jnotify explain</h1>
+		<p>
+			<b>title</b> &mdash; is text variable, using for set message title<br />
+			<b>text</b> &mdash; is text variable, using for set message body text<br />
+			<b>pictureSrc</b> &mdash; is text variable, link to picture, this picture using for preview<br />
+			<b>options</b> &mdash; is object variable and contains:<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;<b>lifeTime</b> &mdash; timer for close message, in miliseconds<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;<b>customClass</b> &mdash; custom class name, which will attach to message<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;<b>click</b> &mdash; callback function, when user click to message<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;<b>close</b> &mdash; callback function, when user closed message<br />
+		</p>
+		
+		<h1>Example: Default message</h1>
+		<div class="code">$.jnotify('Message from John Doe', 'Hello my friend, how are you?', 'image.png');</div>
+		
+		<h1>Example: Message with timer (3 seconds)</h1>
+		<div class="code">$.jnotify('Message from John Doe', 'Hello my friend, how are you?', 'image.png', {lifeTime: 3000});</div>
+	</div>
+</body>
+</html>

@@ -40,15 +40,47 @@ jQuery(document).ready(function($){$("a[rel^='prettyPhoto']").prettyPhoto();  } 
 <?php if(is_front_page() && strpos($slider_type, 'atic') == false){ ?>
 <script type="text/javascript" src="<?php echo get_bloginfo('template_url');?>/sliders/scripts/slider_<?php echo $slider_type;  ?>.js"></script>
 <?php }?>
-<style type="text/css">
-.intro_text {
-width: 960px;
-text-align: center;
-font-size: 18px;
-margin: 25px 0 0 0;
-}
 
+<link href="<?php echo get_bloginfo('template_url');?>/notifier/css/jnotifier.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="<?php echo get_bloginfo('template_url');?>/notifier/js/jnotifier.min.js"></script>
+
+
+<script type="text/javascript">
+<?php if(strpos($_SERVER["REQUEST_URI"],'thank-you')) { ?>
+	jQuery(document).ready(function($){
+		$.jnotify('FanActions Launch Contest', 'JACKPOT! <br>100 points toward the $1000 launch prize!<br><a href="#">Enter Now</a>', '<?php echo get_bloginfo('template_url');?>/notifier/images/100points.png', {lifeTime: 8000			});
+	} );
+<?php } else { ?>
+	jQuery(document).ready(function($){
+		$.jnotify('FanActions Launch Contest', 'You just earned 5 points toward the $1000 launch prize!<br><a href="#">Enter Now</a>', '<?php echo get_bloginfo('template_url');?>/notifier/images/5points.png', {lifeTime: 8000			});
+	} );
+<?php } ?>
+</script>
+
+<style type="text/css">
+	.intro_text {
+		width: 960px;
+		text-align: center;
+		font-size: 18px;
+		margin: 25px 0 0 0;
+	}
+	#content label {
+		margin: 0 0 0 0;
+		font-size: 13px;
+	}
+	.gform_wrapper form {
+		text-align: left;
+		padding-left: 374px;
+	}
+	#gforms_confirmation_message {
+		padding-left: 374px;
+	}
+	.gform_footer.top_label {
+		padding-left: 12px;
+	}
 </style>
+
 </head>
                                                                                       
 <body>
