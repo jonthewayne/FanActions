@@ -41,6 +41,13 @@ $slider_type = get_option('st_slider_type');
         </div><!-- END "div.action" -->
   <?php } ?>
         <div class="clear"></div>
+        
+        <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+        	<?php the_content(); ?>
+        <?php endwhile; ?>
+                
+        
+        <div class="clear"></div>
         <div class="home_layout_1">
             <?php
            /* DESC: each widget 'sidebar' is wrapped by div widget_footer_holder_[count of the sidebars]

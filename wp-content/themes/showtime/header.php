@@ -40,6 +40,15 @@ jQuery(document).ready(function($){$("a[rel^='prettyPhoto']").prettyPhoto();  } 
 <?php if(is_front_page() && strpos($slider_type, 'atic') == false){ ?>
 <script type="text/javascript" src="<?php echo get_bloginfo('template_url');?>/sliders/scripts/slider_<?php echo $slider_type;  ?>.js"></script>
 <?php }?>
+<style type="text/css">
+.intro_text {
+width: 960px;
+text-align: center;
+font-size: 18px;
+margin: 25px 0 0 0;
+}
+
+</style>
 </head>
                                                                                       
 <body>
